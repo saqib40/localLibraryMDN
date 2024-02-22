@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  if myArray.length
+   ul 
+    each i in myArray 
+      li
+        a(href=i.url) #{i.name}
+  else 
+   p There are no genres.

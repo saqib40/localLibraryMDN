@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  if myArray.length
+   ul 
+    each i in myArray 
+      li
+        a(href=i.url) #{i.name}
+        | (#{i.date_of_birth_formatted} - #{i.date_of_death_formatted})
+  else 
+   p There are no authors.

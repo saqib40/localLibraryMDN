@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  if myArray.length
+   ul 
+    each i in myArray 
+      li
+        a(href=i.url) #{i.title} 
+        | (#{i.author.family_name}, #{i.author.first_name})
+  else 
+   p There are no books.
+    

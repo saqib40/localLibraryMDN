@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #[em LocalLibrary], a very basic Express website developed as a tutorial example on MDN
+  h1 Dynamic Content
+  p The library has the following record counts:
+  ul
+    li #[strong Books:] #{myArray[0]}
+    li #[strong Copies:] #{myArray[1]}
+    li #[strong Copies Available:] #{myArray[2]}
+    li #[strong Authors:] #{myArray[3]}
+    li #[strong Genres:] #{myArray[4]}
